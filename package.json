@@ -13,10 +13,10 @@
   "license": "ISC",
   "dependencies": {
     "h2o2": "^4.0.2",
+    "handlebars": "^4.0.4",
     "hapi": "^11.1.1",
     "hapi-mongodb": "^4.1.0",
     "inert": "^3.2.0",
-    "jade": "^1.11.0",
     "kerberos": "0.0.17",
     "vision": "^4.0.1"
   }

@@ -1,9 +1,9 @@
-@info = [
+@routes = [
     {
         method: 'GET'
         path: '/'
         handler: (request,reply) ->
-            reply('<h1>Hello World!</h1>')
+            reply.view('index',{name:'Scott'})
     }
     {
         method: 'GET'
@@ -15,3 +15,15 @@
                 listing: true
     }
 ]
+
+@server_config = {
+    host: 'localhost'
+    port: 3000
+}
+
+@views_config = {
+    engines:
+        html: require('handlebars')
+    relativeTo: __dirname
+    path: 'templates'
+}

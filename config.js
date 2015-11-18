@@ -1,9 +1,11 @@
-this.info = [
+this.routes = [
   {
     method: 'GET',
     path: '/',
     handler: function(request, reply) {
-      return reply('<h1>Hello World!</h1>');
+      return reply.view('index', {
+        name: 'Scott'
+      });
     }
   }, {
     method: 'GET',
@@ -17,3 +19,16 @@ this.info = [
     }
   }
 ];
+
+this.server_config = {
+  host: 'localhost',
+  port: 3000
+};
+
+this.views_config = {
+  engines: {
+    html: require('handlebars')
+  },
+  relativeTo: __dirname,
+  path: 'templates'
+};
