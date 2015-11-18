@@ -9,6 +9,16 @@ this.routes = [
     }
   }, {
     method: 'GET',
+    path: '/users/{name}',
+    handler: function(request, reply) {
+      var name;
+      name = encodeURIComponent(request.params.name);
+      return reply.view('index', {
+        name: name
+      });
+    }
+  }, {
+    method: 'GET',
     path: '/public/{path*}',
     handler: {
       directory: {

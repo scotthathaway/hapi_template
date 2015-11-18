@@ -7,6 +7,13 @@
     }
     {
         method: 'GET'
+        path: '/users/{name}'
+        handler: (request,reply) ->
+            name = encodeURIComponent(request.params.name)
+            reply.view('index',{name: name})
+    }
+    {
+        method: 'GET'
         path: '/public/{path*}'
         handler:
             directory:
