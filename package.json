@@ -12,7 +12,11 @@
   "author": "premier team",
   "license": "ISC",
   "dependencies": {
+    "h2o2": "^4.0.2",
     "hapi": "^11.1.1",
-    "inert": "^3.2.0"
+    "inert": "^3.2.0",
+    "jade": "^1.11.0",
+    "kerberos": "0.0.17",
+    "vision": "^4.0.1"
   }
 }
