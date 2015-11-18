@@ -10,7 +10,7 @@ this.info = [
     path: '/public/{path*}',
     handler: {
       directory: {
-        path: __dirname + "/public",
+        path: "../hapi_template_common",
         index: false,
         listing: true
       }
