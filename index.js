@@ -1,4 +1,4 @@
-var Config, Hapi, HapiProxy, Inert, Path, Vision, server;
+var Config, Hapi, HapiProxy, Inert, Vision, server;
 
 Hapi = require('hapi');
 
@@ -13,8 +13,6 @@ Inert = require('inert');
 Vision = require('vision');
 
 HapiProxy = require('h2o2');
-
-Path = require('path');
 
 server.register([Inert, Vision, HapiProxy], function(err) {
   var i, route, _ref;

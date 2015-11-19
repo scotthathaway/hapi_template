@@ -8,10 +8,9 @@ Config = require("./config")
 server.connection(Config.server_config)
 
 # plugins
-Inert     = require('inert')
-Vision    = require('vision')
-HapiProxy = require('h2o2')
-Path      = require('path')
+Inert        = require('inert')
+Vision       = require('vision')
+HapiProxy    = require('h2o2')
 
 # register plugins and create routes
 server.register([Inert,Vision,HapiProxy], (err) ->
