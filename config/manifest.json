@@ -1,0 +1,17 @@
+{
+    "server": {
+        "app": {
+            "slogan": "Hapi Template"
+        }
+    },
+    "connections": [{
+        "host": "localhost",
+        "port": 3000,
+        "labels": ["ui"]
+    }],
+    "plugins": {
+        "inert":null,
+        "vision":null,
+        "./company": null
+    }
+}
