@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "alasql": "^0.2.1",
+    "blipp": "^2.3.0",
     "glue": "^2.4.0",
     "h2o2": "^4.0.2",
     "handlebars": "^4.0.4",
@@ -23,6 +24,7 @@
     "kerberos": "0.0.17",
     "lodash": "^3.10.1",
     "mysql": "^2.9.0",
+    "tv": "^5.0.1",
     "util": "^0.10.3",
     "vision": "^4.0.1"
   }

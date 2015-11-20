@@ -12,6 +12,8 @@
     "plugins": {
         "inert":null,
         "vision":null,
+        "blipp":null,
+        "tv":null,
         "./company": null
     }
 }
