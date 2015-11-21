@@ -8,7 +8,6 @@ module.exports = function(request, reply) {
       pageTitle: 'Home Page',
       rs: rs
     };
-    console.log("home rs =", context);
     return reply.view('home', context);
   });
 };

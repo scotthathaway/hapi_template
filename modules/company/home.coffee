@@ -5,6 +5,6 @@ module.exports = (request, reply) ->
 		context =
 			pageTitle: 'Home Page'
 			rs: rs
-		console.log "home rs =", context
+		# console.log "home rs =", context
 		reply.view('home', context)
 	)

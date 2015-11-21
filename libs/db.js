@@ -1,7 +1,7 @@
 var query;
 
 query = function(sql, log, cfg) {
-  var connection, mysql, rows, _;
+  var mysql, _;
   if (log == null) {
     log = false;
   }
@@ -18,8 +18,6 @@ query = function(sql, log, cfg) {
   }
   mysql = require("promise-mysql");
   _ = require("lodash");
-  connection = {};
-  rows = [];
   return mysql.createConnection(cfg).then(function(conn) {
     return conn.query(sql).then(function(rows) {
       var i, key, keys, row, rs, _i, _len;

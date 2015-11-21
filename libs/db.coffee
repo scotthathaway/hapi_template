@@ -2,8 +2,6 @@ query = (sql,log=false,cfg='') ->
 	if cfg is '' then cfg={host:'localhost',user:'scott',password:'kaylie',database:'hapi'}
 	mysql = require("promise-mysql")
 	_     = require("lodash")
-	connection = {}
-	rows = []
 	mysql.createConnection(cfg).then((conn) ->
 		conn.query(sql).then((rows) ->
 			if rows==[]
