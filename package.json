@@ -25,6 +25,7 @@
     "jquery": "^2.1.4",
     "kerberos": "0.0.17",
     "lodash": "^3.10.1",
+    "mongodb-bluebird": "0.0.8",
     "mysql": "^2.9.0",
     "promise-mysql": "^1.1.1",
     "tv": "^5.0.1",
