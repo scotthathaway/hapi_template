@@ -5,16 +5,16 @@
         }
     },
     "connections": [{
-        "host": "localhost",
-        "port": 3000,
+        "host"  : "localhost",
+        "port"  : 3000,
         "labels": ["ui"]
     }],
     "plugins": {
-        "inert":null,
-        "vision":null,
-        "blipp":null,
-        "tv":null,
-        "./company": null,
+        "inert"   : null,
+        "vision"  : null,
+        "blipp"   : null,
+        "tv"      : null,
+        "./main"  : null,
         "./public": null
     }
 }
